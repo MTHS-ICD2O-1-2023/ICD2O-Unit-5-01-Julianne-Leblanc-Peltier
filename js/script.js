@@ -19,4 +19,9 @@ function myButtonClicked() {
     //output
     document.getElementById("number-guess-output").innerHTML = "You guessed incorrectly!"
   }
+
+  if (userNumberGuess > 6 || userNumberGuess < 1) {
+    //output
+    document.getElementById("number-guess-output").innerHTML = "Please input a number from 1 to 6!"
+  }
 }
